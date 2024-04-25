@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:tlwapp/model/drawer_listTile.dart';
-import 'package:tlwapp/model/userProfile.dart';
+import 'package:tlwapp/component/drawer_listTile.dart';
+import 'package:tlwapp/screens/userProfile.dart';
 
 class userDrawer extends StatefulWidget {
   const userDrawer({super.key});

@@ -4,7 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:tlwapp/component/profileContainer.dart';
 import 'package:tlwapp/component/profileListTile.dart';
-import 'package:tlwapp/model/drawer_listTile.dart';
+import 'package:tlwapp/component/drawer_listTile.dart';
 
 // ignore: camel_case_types
 class userProfile extends StatefulWidget {

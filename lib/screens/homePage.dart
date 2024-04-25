@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tlwapp/model/drawer.dart';
+import 'package:tlwapp/component/drawer.dart';
 
 class homePage extends StatefulWidget {
   const homePage({super.key});

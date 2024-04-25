@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tlwapp/companyProfile/company_profile.dart';
-import 'package:tlwapp/model/homePage.dart';
-import 'package:tlwapp/model/userProfile.dart';
+import 'package:tlwapp/screens/homePage.dart';
+import 'package:tlwapp/screens/userProfile.dart';
 
 void main() {
   runApp(const company_Profile());

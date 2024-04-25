@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:tlwapp/component/profileContainer.dart';
 import 'package:faker/faker.dart';
 import 'package:tlwapp/component/profileListTile.dart';
-import 'package:tlwapp/model/drawer_listTile.dart';
+import 'package:tlwapp/component/drawer_listTile.dart';
 
 class company_Profile extends StatefulWidget {
   const company_Profile({super.key});
