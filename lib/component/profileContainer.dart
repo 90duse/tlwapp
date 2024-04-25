@@ -11,7 +11,7 @@ class profileContainer extends StatelessWidget {
       padding: EdgeInsets.all(6),
       margin: EdgeInsets.all(10),
       decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 0, 0, 0),
+          color: Color.fromARGB(255, 255, 255, 250),
           borderRadius: BorderRadius.all(Radius.circular(10.0))),
       child: cunug,
     );

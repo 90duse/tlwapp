@@ -16,11 +16,11 @@ class profileListTile extends StatelessWidget {
       tileColor: Color.fromARGB(255, 255, 255, 255),
       title: Text(
         labalhint,
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
       ),
       subtitle: Text(
         textname,
-        style: TextStyle(color: Colors.white),
+        style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
       ),
       trailing: Icon(editIcon),
     );

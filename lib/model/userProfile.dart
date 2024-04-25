@@ -24,16 +24,16 @@ class _userProfileState extends State<userProfile> {
           backgroundColor: Color.fromARGB(255, 243, 243, 243),
           appBar: AppBar(
             title: Center(child: Text('Profile')),
-            backgroundColor: Colors.black,
-            titleTextStyle: TextStyle(color: Colors.white),
+            backgroundColor: Colors.white,
+            titleTextStyle: TextStyle(color: Colors.black),
           ),
           body: Column(
             children: [
               Center(
                 child: Container(
-                  color: Color.fromARGB(255, 255, 255, 255),
-                  padding: EdgeInsets.all(10),
-                  margin: EdgeInsets.all(10),
+                  color: Color.fromARGB(255, 255, 255, 250),
+                  padding: EdgeInsets.only(top: 2, bottom: 10),
+                  margin: EdgeInsets.only(top: 10.0, bottom: 10.0),
                   width: double.infinity,
                   child: Column(
                     children: [

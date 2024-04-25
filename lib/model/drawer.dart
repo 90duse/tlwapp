@@ -15,7 +15,7 @@ class _userDrawerState extends State<userDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Color.fromARGB(31, 212, 229, 250),
+      backgroundColor: Color.fromARGB(31, 0, 0, 0),
       child: Column(
         children: [
           DrawerHeader(
@@ -37,7 +37,10 @@ class _userDrawerState extends State<userDrawer> {
                   child: Text('P R O F I L E'))),
           drawerList_tile(
               icon: Icons.login_outlined,
-              botton: TextButton(onPressed: () {}, child: Text('L O G O U T'))),
+              botton: TextButton(
+                  style: TextButton.styleFrom(foregroundColor: Colors.white),
+                  onPressed: () {},
+                  child: Text('L O G O U T'))),
         ],
       ),
     );
