@@ -2,6 +2,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:tlwapp/component/profileContainer.dart';
 import 'package:tlwapp/component/profileListTile.dart';
 import 'package:tlwapp/model/drawer_listTile.dart';
 
@@ -45,44 +46,23 @@ class _userProfileState extends State<userProfile> {
                   ),
                 ),
               ),
-              // info data
-              // Container(
-              //   alignment: Alignment.topLeft,
-              //   padding: EdgeInsets.all(15),
-              //   child: Text('My Details'),
-              // ),
-              Container(
-                alignment: Alignment.topLeft,
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: profileListTile(
+
+              profileContainer(
+                cunug: profileListTile(
                     editIcon: Icons.settings,
                     labalhint: 'name',
                     textname: 'John Doe'),
               ),
-              Container(
-                alignment: Alignment.topLeft,
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: profileListTile(
+
+              profileContainer(
+                cunug: profileListTile(
                     editIcon: Icons.settings,
                     labalhint: 'Email',
                     textname: 'example@gmail.com'),
               ),
-              Container(
-                alignment: Alignment.topLeft,
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: Column(
+
+              profileContainer(
+                cunug: Column(
                   children: [
                     profileListTile(
                         editIcon: Icons.settings,
@@ -93,25 +73,21 @@ class _userProfileState extends State<userProfile> {
                       title: Text(
                         'Phone',
                         style: TextStyle(
-                            color: const Color.fromARGB(255, 112, 112, 112)),
+                            color: Color.fromARGB(255, 255, 255, 255)),
                       ),
                       subtitle: Text('455555'),
                     )
                   ],
                 ),
               ),
-              Container(
-                alignment: Alignment.topLeft,
-                padding: EdgeInsets.all(8),
-                margin: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: profileListTile(
+
+              profileContainer(
+                cunug: profileListTile(
                     editIcon: Icons.settings,
                     labalhint: 'Day of birth',
                     textname: '11/11/24'),
               ),
+
               // Is email verified
               // Container(
               //   alignment: Alignment.topLeft,
@@ -119,16 +95,8 @@ class _userProfileState extends State<userProfile> {
               //   child: profileListTile(
               //       editIcon: Icons.settings, labalhint: '', textname: ''),
               // ),
-
-              Container(
-                alignment: Alignment.topLeft,
-                padding: EdgeInsets.all(12),
-                margin: EdgeInsets.all(15),
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 0, 0, 0),
-                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
-                child: ListTile(
-                  // tileColor: Colors.amber,
+              profileContainer(
+                cunug: ListTile(
                   title: Text(
                     'Profile',
                     style: TextStyle(color: Colors.white),
@@ -139,6 +107,7 @@ class _userProfileState extends State<userProfile> {
                   ),
                 ),
               ),
+
               ElevatedButton(onPressed: () {}, child: Text('Edit Profile'))
             ],
           ),
