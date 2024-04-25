@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tlwapp/companyCatogery/company_catogery.dart';
 import 'package:tlwapp/companyProfile/company_profile.dart';
 import 'package:tlwapp/screens/homePage.dart';
-import 'package:tlwapp/screens/userProfile.dart';
+import 'package:tlwapp/userprofile/userProfile.dart';
 
 void main() {
   runApp(const MyApp());

@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:tlwapp/companyProfile/company_profile.dart';
 import 'package:tlwapp/component/drawer_listTile.dart';
-import 'package:tlwapp/screens/userProfile.dart';
+import 'package:tlwapp/userprofile/userProfile.dart';
 
 class userDrawer extends StatefulWidget {
   const userDrawer({super.key});
