@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:tlwapp/companyCatogery/company_catogery.dart';
 import 'package:tlwapp/companyProfile/company_profile.dart';
 import 'package:tlwapp/screens/homePage.dart';
 import 'package:tlwapp/screens/userProfile.dart';
 
 void main() {
-  runApp(const company_Profile());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const homePage());
+        home: const company_catogery());
   }
 }
 
