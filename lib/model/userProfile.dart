@@ -15,6 +15,7 @@ class userProfile extends StatefulWidget {
 }
 
 class _userProfileState extends State<userProfile> {
+  bool Isvisible = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,6 +33,7 @@ class _userProfileState extends State<userProfile> {
                 child: Container(
                   color: Color.fromARGB(255, 255, 255, 255),
                   padding: EdgeInsets.all(10),
+                  margin: EdgeInsets.all(10),
                   width: double.infinity,
                   child: Column(
                     children: [
@@ -44,6 +46,13 @@ class _userProfileState extends State<userProfile> {
                       Text('Rates _ 4 Stars'),
                     ],
                   ),
+                ),
+              ),
+              Visibility(
+                visible: false,
+                child: profileContainer(
+                  cunug: profileListTile(
+                      editIcon: Icons.settings, labalhint: 'ID', textname: 111),
                 ),
               ),
 
@@ -88,27 +97,32 @@ class _userProfileState extends State<userProfile> {
                     textname: '11/11/24'),
               ),
 
-              // Is email verified
-              // Container(
-              //   alignment: Alignment.topLeft,
-              //   padding: EdgeInsets.all(8),
-              //   child: profileListTile(
-              //       editIcon: Icons.settings, labalhint: '', textname: ''),
-              // ),
-              profileContainer(
-                cunug: ListTile(
-                  title: Text(
-                    'Profile',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  trailing: Icon(
-                    Icons.more,
-                    color: Colors.white,
-                  ),
+              //Is email verified
+              Visibility(
+                visible: false,
+                child: profileContainer(
+                  cunug: profileListTile(
+                      editIcon: Icons.settings,
+                      labalhint: 'Verify Email',
+                      textname: 'Email'),
+                ),
+              ),
+              //OTP
+              Visibility(
+                visible: false,
+                child: profileContainer(
+                  cunug: profileListTile(
+                      editIcon: Icons.settings,
+                      labalhint: 'OTP',
+                      textname: 'OTP'),
                 ),
               ),
 
-              ElevatedButton(onPressed: () {}, child: Text('Edit Profile'))
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: ElevatedButton(
+                    onPressed: () {}, child: Text('Edit Profile')),
+              )
             ],
           ),
         ));
