@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tlwapp/companyProfile/company_profile.dart';
 import 'package:tlwapp/model/homePage.dart';
 import 'package:tlwapp/model/userProfile.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const company_Profile());
 }
 
 class MyApp extends StatelessWidget {
