@@ -55,29 +55,39 @@ class _company_ProfileState extends State<company_Profile> {
                       ),
                     ),
                   ),
-                  Text(faker.company.name()),
-                  Text(faker.internet.safeEmail()),
+                  Container(
+                    color: Colors.white10,
+                    width: double.infinity,
+                    child: Center(
+                        child: Text(
+                      faker.company.name(),
+                    )),
+                  ),
+
+                  Card(child: Text(faker.internet.safeEmail())),
 
                   //bio
-                  Container(
-                    margin: const EdgeInsets.all(10.0),
-                    width: double.infinity,
-                    height: 150,
-                    child: Column(
-                      children: [
-                        Text(faker.lorem.sentences(5).toString()),
-                        const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Icon(Icons.facebook),
-                              Icon(Icons.email),
-                              Icon(Icons.message),
-                            ],
+                  Card(
+                    child: Container(
+                      margin: const EdgeInsets.all(10.0),
+                      width: double.infinity,
+                      height: 150,
+                      child: Column(
+                        children: [
+                          Text(faker.lorem.sentences(5).toString()),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Icon(Icons.facebook),
+                                Icon(Icons.email),
+                                Icon(Icons.message),
+                              ],
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
 
